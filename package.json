@@ -1,6 +1,6 @@
 {
   "name": "capacitor-autostart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Starting up you application on system boot",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
