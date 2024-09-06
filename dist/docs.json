@@ -1,0 +1,67 @@
+{
+  "api": {
+    "name": "CapacitorAutoStartPlugin",
+    "slug": "capacitorautostartplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "enable",
+        "signature": "() => void",
+        "parameters": [],
+        "returns": "void",
+        "tags": [],
+        "docs": "Android: activates the automatic start of your app\n          after the reboot of the device\n\nmacOS: N/A.",
+        "complexTypes": [],
+        "slug": "enable"
+      },
+      {
+        "name": "enableService",
+        "signature": "(id: string) => void",
+        "parameters": [
+          {
+            "name": "id",
+            "docs": "",
+            "type": "string"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "Android: activates the automatic start of an arbitrary (exported) service,\n         with class name `id`, after the reboot of the device.\n\nmacOS: enables a helper application, with bundle identifier, `id`,\n       to launch at boot.",
+        "complexTypes": [],
+        "slug": "enableservice"
+      },
+      {
+        "name": "disable",
+        "signature": "() => void",
+        "parameters": [],
+        "returns": "void",
+        "tags": [],
+        "docs": "Android: deactivates the automatic start of your app and service\n         after the reboot of the device\n\nmacOS: disables a previously enabled helper application from launching\n        at boot.",
+        "complexTypes": [],
+        "slug": "disable"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
